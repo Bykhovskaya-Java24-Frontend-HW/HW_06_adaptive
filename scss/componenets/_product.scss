@@ -1,6 +1,11 @@
 .product {
   padding-top: 70px;
   font-size: 1.1em;
+
+  &__stars {
+    margin-bottom: 40px;
+  }
+
   &__wrap {
     display: flex;
     gap: 50px;
