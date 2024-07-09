@@ -1,0 +1,22 @@
+.slick {
+  &-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(102, 102, 102, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-prev {
+    left: -35px;
+  }
+
+  &-next {
+    right: -35px;
+  }
+}
