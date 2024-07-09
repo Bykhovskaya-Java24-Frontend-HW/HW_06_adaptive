@@ -13,6 +13,15 @@
   font-size: 2em;
   display: inline-block;
   padding-right: 70px;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: #e0edcf;
+  }
 }
 
 .nav {
@@ -30,6 +39,16 @@
 
   &__link {
     font-size: 1.2em;
+    transition: all 0.5s;
+
+    &:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #e0edcf;
+    }
   }
 }
 
@@ -63,5 +82,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s;
+    border-radius: 15px;
+    border: 1px solid transparent;
+
+    & path {
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      path {
+        fill: rgb(202, 195, 195);
+      }
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 1px $color-main--light;
+    }
+
+    &:active {
+      path {
+        fill: rgb(202, 195, 195);
+        opacity: 0.5;
+      }
+    }
   }
 }
