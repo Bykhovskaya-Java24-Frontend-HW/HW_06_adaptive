@@ -14,6 +14,7 @@ $(".product-right--first").slick({
   fade: true,
   centerMode: true,
   asNavFor: ".product-right__list",
+  // mobileFirst: true,
 });
 $(".product-right__list").slick({
   slidesToShow: 3,
